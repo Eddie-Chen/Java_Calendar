@@ -10,6 +10,7 @@ public class SimpleCalendar {
 	  //設定日期輸出的格式 setting the Date format
 	  SimpleDateFormat sdf=new SimpleDateFormat("yyyy MM dd HH:mm:ss");
 	  //要取得時間，使用GregorianCalendar所設定的時間，來取得一個Calendar的實例
+	  //Calendar 是抽象類別，無法被實例化。 類別的名稱不可稱Calendar，會造成錯誤。所以改成SimpleCalendar
 	  Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 	  //假設，要取得現在的時間，首先使用Calendar的getInstance()取得一個Calendar的實例
 	  //Calendar calendar = Calendar.getInstance();
